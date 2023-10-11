@@ -77,6 +77,23 @@ public class Solution {
             e.printStackTrace();
         }
 
+        //TEST
+        Solution s = new Solution();
+        s.readNothing("hehe");
+        s.readNothing("hehe");
+        s.readNothing("hehe");
+        s.readNothing("hehe");
+        s.readNothing("hehe");
+        s.readNothing("hehe");
+        s.readNothing("hehe");
+        try{
+            s.readNothing("hehe");
+            throw new Exception("afda");
+        } catch (Exception e ){
+            e.printStackTrace();
+        }
+        //TEST
+
         try {
             String header = readerFile1.readLine();
 
@@ -166,5 +183,9 @@ public class Solution {
             }
         }
 
+    }
+
+    private void readNothing(String a){
+        System.out.println("reading something...");
     }
 }
